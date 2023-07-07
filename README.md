@@ -1,58 +1,29 @@
-# mailBot-NodeJs
+# Vacation Email Responder
 
-This is a Node.js application that automatically sends an auto-reply to unread emails in Gmail using the Gmail API. The application runs as a server and periodically checks for unread messages in the user's inbox. If an unread message is found, it sends an auto-reply and moves the original message to a labeled folder called "AutoReplied".
+This is a Node.js based application that allows you to automatically respond to emails sent to your Gmail mailbox while you're on vacation. The application utilizes the Gmail API to access your Gmail account, identify new emails, send replies to first-time email threads, and organize emails with labels.
+
+## Features
+
+1. **Checking for New Emails**: The application periodically checks for new emails in the specified Gmail account using the Gmail API.
+
+2. **Sending Replies**: When a new email is detected, the application sends a reply if it is the first time a response is being sent in the email thread. The content of the reply can be customized as per your preference.
+
+3. **Labeling Emails**: After sending a reply, the application adds a label to the email and moves it to the labeled category in Gmail. If the label does not exist, it will be created automatically.
+
+4. **Randomized Interval**: The application repeats the sequence of checking for new emails, sending replies, and labeling in random intervals ranging from 45 to 120 seconds. This adds a level of unpredictability to the response timing.
 
 ## Prerequisites
 
-Before running the application, make sure you have the following prerequisites:
+Before running the application, make sure you have the following:
 
-- Node.js (version 12 or higher)
-- Gmail API credentials (JSON file)
+- Node.js installed on your machine
+- A Gmail account
+- API credentials for Google's Gmail API
 
 ## Installation
 
 1. Clone the repository:
 
-   ```
-   git clone https://github.com/themanvendra00/mailBot-NodeJs.git
-   ```
-
-2. Navigate to the project directory:
-
-    ```
-    cd gmail-auto-reply
-    ```
-
-3. Install dependencies using npm:
-
-    ```
-    npm install
-    ```
-
-4. Add your Gmail API credentials:
-
-    - create the credentials.json file.
-    - Replace path/to/your/credentials.json with the actual path to your Gmail API credentials JSON file.
-
-## Usage
-
-1. Start the application:
-
-    ```
-    npm start
-    ```
-
-2. The application will start a server on port 8080.
-
-3. Open a web browser and go to http://localhost:8080 to initiate the auto-reply process.
-
-4. The application will authenticate using the provided Gmail API credentials and periodically check for unread messages in the inbox.
-
-5. If an unread message is found, the application will send an auto-reply email and move the original message to the "AutoReplied" labeled folder.
-
-## Configuration
-
-You can customize the behavior of the application by modifying the following variables in the `index.js` file:
-
-    - `SCOPES`: An array of Gmail API scopes required for the application.
-    - `labelName`: The name of the labeled folder where the original messages will be moved.
+```bash
+git clone <repository-url>
+```
