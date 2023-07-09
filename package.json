@@ -1,7 +1,7 @@
 {
   "name": "backend",
   "version": "1.0.0",
-  "description": "Node.js based app that is able to respond to emails sent to your Gmail mailbox while you’re out on a vacation.",
+  "description": "Node.js based app that automates gmail unseen messages when you are on a vacation",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -9,15 +9,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/themanvendra00/mailBot-NodeJs.git"
+    "url": "git+https://github.com/vamsikrishna-addanki/main.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/themanvendra00/mailBot-NodeJs/issues"
+    "url": "https://github.com/vamsikrishna-addanki/main/issues"
   },
-  "homepage": "https://github.com/themanvendra00/mailBot-NodeJs#readme",
+  "homepage": "https://github.com/vamsikrishna-addanki/main#readme",
   "dependencies": {
     "@google-cloud/local-auth": "^2.1.1",
     "express": "^4.18.2",
